@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hangman · One letter at a time</title>
+<link rel="stylesheet" href="style.css">
+<script src="game.js" defer></script>
+</head>
+<body>
+<main>
+<header><a class="brand" href="./">h<span>·</span> Hangman</a><span class="tag">THE DAILY BRAIN BREAK</span></header>
+<section class="intro"><p class="eyebrow">A LITTLE GUESSWORK GOES A LONG WAY</p><h1>One letter.<br>Endless possibilities.</h1><p>Find the hidden word before your chances run out.</p></section>
+<section class="game" aria-label="Hangman game">
+<div class="drawing-panel"><div class="panel-top"><span>YOUR NEXT GREAT GUESS</span><span id="count">0 / 6 misses</span></div>
+<svg viewBox="0 0 300 270" role="img" aria-label="Hangman drawing"><g class="scaffold"><path d="M45 245H240 M85 245V25H195V60 M85 65L125 25"/></g><g class="person"><circle data-part cx="195" cy="83" r="23"/><path data-part d="M195 106V173"/><path data-part d="M195 125L158 149"/><path data-part d="M195 125L232 149"/><path data-part d="M195 173L165 215"/><path data-part d="M195 173L225 215"/></g></svg>
+<p class="drawing-note">Every letter is a fresh possibility.</p></div>
+<div class="play-panel"><div class="meta"><span id="category"></span><span id="remaining"></span></div><div id="word" aria-label="Hidden word"></div><p id="status" role="status" aria-live="polite"></p><div id="keyboard" aria-label="Choose a letter"></div><div class="actions"><button id="new-game" class="primary">New word <span aria-hidden="true">↗</span></button><span class="keyboard-tip">Or use your keyboard</span></div></div>
+</section>
+<footer><span>A classic game. A small escape.</span><span>26 letters. Make them count.</span></footer>
+</main>
+</body>
+</html>
